@@ -1,0 +1,1491 @@
+{
+  "list": [
+    {
+      "id": 9750101,
+      "skillTier": 1,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750101,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "SCARLET",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S1",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 3,
+          "skillLevelCorrection": 2,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:WinDuel/LUA:nikaidou_hiro/LUAMAIN:hiro_rebuttal_skill"
+            },
+            {
+              "scriptName": "CoinScaleAdderViaBothBuffSumCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBuffCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 10,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_stack"
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 2,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750102,
+      "skillTier": 2,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750102,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "INDIGO",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S3",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 4,
+          "skillLevelCorrection": 3,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:WinDuel/LUA:nikaidou_hiro/LUAMAIN:hiro_rebuttal_skill"
+            },
+            {
+              "scriptName": "CoinScaleAdderViaBothBuffSumCheckDevideByStackWithLimit1",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBuffCheckDevideByStackWithLimit3",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 10,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                }
+              ]
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_pride_bonus"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750103,
+      "skillTier": 3,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750103,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "CRIMSON",
+          "atkType": "HIT",
+          "defType": "ATTACK",
+          "skillMotion": "S2",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 5,
+          "skillLevelCorrection": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnVisualUse/LUA:nikaidou_hiro/LUAMAIN:hiro_voice_skill"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:nikaidou_hiro/LUAMAIN:hiro_skill3_after"
+            },
+            {
+              "scriptName": "CoinScaleAdderViaBothBuffSumCheckDevideByStackWithLimit1",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBuffCheckDevideByStackWithLimit4",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 10,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "ChangeSkillMotion_S2",
+                  "buffData": {
+                    "turn": 3
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_2"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_stack"
+                }
+              ],
+              "actionIndex": 3
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "ChangeSkillMotion_S2",
+                  "buffData": {
+                    "turn": 3
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_2"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ],
+              "actionIndex": 3
+            },
+            {
+              "operatorType": "ADD",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "ChangeSkillMotion_S2",
+                  "buffData": {
+                    "turn": 3
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_2"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSA",
+                  "buffData": {
+                    "buffKeyword": "Combustion",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                }
+              ],
+              "actionIndex": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750111,
+      "skillTier": 1,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750111,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "SCARLET",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "skillMotion": "S2",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 10,
+          "skillLevelCorrection": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:WinDuel/LUA:nikaidou_hiro/LUAMAIN:hiro_rebuttal_skill"
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBothBuffSumCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit5",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 15,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_stack"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_1"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_1"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_before"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSA",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_after"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750131,
+      "skillTier": 1,
+      "skillData": [
+        {
+          "skillTargetType": "RANDOM",
+          "iconID": 9750111,
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": false,
+          "attributeType": "SCARLET",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "skillMotion": "S2",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 10,
+          "skillLevelCorrection": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:WinDuel/LUA:nikaidou_hiro/LUAMAIN:hiro_rebuttal_skill"
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBothBuffSumCheckDevideByStackWithLimit2",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit5",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 15,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_stack"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_1"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_1"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_before"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSA",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_after"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750112,
+      "skillTier": 2,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750112,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "INDIGO",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "skillMotion": "S3",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 16,
+          "skillLevelCorrection": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:WinDuel/LUA:nikaidou_hiro/LUAMAIN:hiro_rebuttal_skill"
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBothBuffSumCheckDevideByStackWithLimit3",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit5",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 15,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_1"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_1"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_pride_bonus"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_before"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSA",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_after"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750132,
+      "skillTier": 2,
+      "skillData": [
+        {
+          "skillTargetType": "RANDOM",
+          "iconID": 9750112,
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": false,
+          "attributeType": "INDIGO",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "skillMotion": "S3",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 16,
+          "skillLevelCorrection": 4,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:WinDuel/LUA:nikaidou_hiro/LUAMAIN:hiro_rebuttal_skill"
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBothBuffSumCheckDevideByStackWithLimit3",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit5",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 15,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_1"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_1"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "scale": 4,
+              "abilityScriptList": [
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_pride_bonus"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_before"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSA",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_after"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750113,
+      "skillTier": 3,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750113,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "CRIMSON",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "skillMotion": "S3",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 18,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnVisualUse/LUA:nikaidou_hiro/LUAMAIN:hiro_voice_skill"
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBothBuffSumCheckDevideByStackWithLimit4",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit8",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 10,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 6,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_stack"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_2"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 6,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_2"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 6,
+              "actionIndex": 3,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSA",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_before"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSA",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_after"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750133,
+      "skillTier": 3,
+      "skillData": [
+        {
+          "skillTargetType": "RANDOM",
+          "iconID": 9750113,
+          "canTeamKill": true,
+          "canDuel": true,
+          "canChangeTarget": false,
+          "attributeType": "CRIMSON",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "skillMotion": "S3",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 18,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnVisualUse/LUA:nikaidou_hiro/LUAMAIN:hiro_voice_skill"
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBothBuffSumCheckDevideByStackWithLimit4",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit8",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 10,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 6,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_stack"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_2"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 6,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 1,
+                    "turn": 0,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_2"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 6,
+              "actionIndex": 3,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSA",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_before"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSA",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_rs_bleed_gate_after"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_gain_factor_2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750121,
+      "skillTier": 3,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750121,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "CRIMSON",
+          "atkType": "SLASH",
+          "defType": "ATTACK",
+          "skillMotion": "S3",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 3,
+          "range": 6.5,
+          "defaultValue": 20,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnVisualUse/LUA:nikaidou_hiro/LUAMAIN:hiro_voice_skill"
+            },
+            {
+              "scriptName": "SkillPowerAdderOnUseViaBothBuffSumCheckDevideByStackWithLimit4",
+              "buffData": {
+                "buffKeyword": "Laceration",
+                "stack": 6,
+                "turn": 0,
+                "value": 1
+              }
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit10",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 10,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 8,
+              "actionIndex": 1,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_stack"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 8,
+              "actionIndex": 2,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveBuffOnSucceedAttack",
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 2,
+                    "turn": 1,
+                    "activeRound": 0
+                  }
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_potency"
+                },
+                {
+                  "scriptName": "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_bleed_stack"
+                }
+              ]
+            },
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 8,
+              "actionIndex": 3,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "ForceToActivateBuffOSAValueTimes",
+                  "value": 3,
+                  "buffData": {
+                    "buffKeyword": "Laceration",
+                    "target": "Target",
+                    "stack": 0,
+                    "turn": 1,
+                    "limit": 99
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750122,
+      "skillTier": 3,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750122,
+          "canTeamKill": false,
+          "canDuel": true,
+          "canChangeTarget": true,
+          "attributeType": "AZURE",
+          "atkType": "PENETRATE",
+          "defType": "ATTACK",
+          "skillMotion": "S8",
+          "viewType": "ENCOUNTER",
+          "parryingCloseType": "NEAR",
+          "targetNum": 5,
+          "range": 6.5,
+          "defaultValue": 10,
+          "skillLevelCorrection": 5,
+          "abilityScriptList": [
+            {
+              "scriptName": "CanChangeTargetIgnoreSpeed"
+            },
+            {
+              "scriptName": "IgnoreDefenseSkill"
+            },
+            {
+              "scriptName": "Modular/TIMING:StartDuel/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_keep_form"
+            },
+            {
+              "scriptName": "Modular/TIMING:BeforeUse/LUA:nikaidou_hiro/LUAMAIN:hiro_before_use"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndSkill/LUA:nikaidou_hiro/LUAMAIN:hiro_ritual_after"
+            },
+            {
+              "scriptName": "SkillPowerResultAdderViaBuffCheckDevideByStackWithLimit10",
+              "buffData": {
+                "buffKeyword": "WitchFactor",
+                "buffOwner": "Self",
+                "stack": 10,
+                "turn": 0,
+                "value": 1
+              }
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "grade": 2,
+              "color": "GREY",
+              "scale": 2,
+              "actionIndex": 2,
+              "cutsceneStart": true,
+              "abilityScriptList": [
+                {
+                  "scriptName": "ChangeAppearanceTemp_!custom_1079_Sancho_BerserkAppearance"
+                },
+                {
+                  "scriptName": "SuperCoin"
+                },
+                {
+                  "scriptName": "GiveAdditionalDmgViaEachTargetBuffStackAndMaxHpRatioOnSuccessAttackUsableCoin",
+                  "buffData": {
+                    "buffKeyword": "ReposeMark",
+                    "value": 0.01
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750104,
+      "skillTier": 1,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750104,
+          "canTeamKill": false,
+          "canDuel": false,
+          "canChangeTarget": true,
+          "attributeType": "SCARLET",
+          "atkType": "NONE",
+          "defType": "GUARD",
+          "skillMotion": "Default",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 5,
+          "skillLevelCorrection": -2,
+          "abilityScriptList": [
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_guard_shield"
+            },
+            {
+              "scriptName": "Modular/TIMING:StartBattle/LUA:nikaidou_hiro/LUAMAIN:hiro_rebuttal_guard"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "ADD",
+              "scale": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9750114,
+      "skillTier": 1,
+      "skillData": [
+        {
+          "skillTargetType": "FRONT",
+          "iconID": 9750114,
+          "canTeamKill": false,
+          "canDuel": false,
+          "canChangeTarget": true,
+          "attributeType": "SCARLET",
+          "atkType": "NONE",
+          "defType": "EVADE",
+          "skillMotion": "Default",
+          "viewType": "BATTLE",
+          "parryingCloseType": "NEAR",
+          "targetNum": 1,
+          "range": 6.5,
+          "defaultValue": 16,
+          "skillLevelCorrection": -2,
+          "abilityScriptList": [
+            {
+              "scriptName": "Modular/TIMING:StartBattle/LUA:nikaidou_hiro/LUAMAIN:hiro_def_witch_start"
+            },
+            {
+              "scriptName": "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_witch_guard_power"
+            },
+            {
+              "scriptName": "Modular/TIMING:StartBattle/LUA:nikaidou_hiro/LUAMAIN:hiro_rebuttal_guard"
+            },
+            {
+              "scriptName": "Modular/TIMING:OnSucceedEvade/LUA:nikaidou_hiro/LUAMAIN:hiro_evade"
+            },
+            {
+              "scriptName": "Modular/TIMING:EndBattle/LUA:nikaidou_hiro/LUAMAIN:hiro_def_witch_endround"
+            }
+          ],
+          "coinList": [
+            {
+              "operatorType": "SUB",
+              "scale": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

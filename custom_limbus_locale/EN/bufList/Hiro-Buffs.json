@@ -1,0 +1,58 @@
+{
+  "WitchFactor": {
+    "id": "WitchFactor",
+    "name": "Witch Factor",
+    "desc": "- Max Stack: 100\n- Damage dealt +0.5% for each Stack (max 50%)",
+    "summary": "",
+    "flavor": ""
+  },
+  "Witchization": {
+    "id": "Witchization",
+    "name": "Witchization",
+    "desc": "- Max Stack: 100\n- At turn start, lose (Stack / 2) SP (max 25)\n- At turn end, gain 1 Stack, plus 1 Stack for every 10 [WitchFactor]\n- SP cannot be higher than 0\n- Set base Physical Resistances to 0.5\n- At turn start, gain (Stack / 2) [Offense Level Up] (max 5)\n- At turn start, gain (Stack / 2) [Haste] (max 3)",
+    "summary": "",
+    "flavor": ""
+  },
+  "Rebuttal": {
+    "id": "Rebuttal",
+    "name": "Rebuttal",
+    "desc": "- Max Stack: 5\n- Nikaidou Hiro's Skills gain additional effects against targets with this effect\n- At turn end, lose 1 Stack",
+    "summary": "",
+    "flavor": ""
+  },
+  "Rewind": {
+    "id": "Rewind",
+    "name": "Rewind",
+    "desc": "- Max Stack: 2\n- HP cannot drop below 1\n- If fatal damage is taken, heal ([WitchFactor] Stack + 30)% HP (max 80%) at the next turn start, recover from Stagger, clear all negative effects, and lose 1 Stack",
+    "summary": "",
+    "flavor": ""
+  },
+  "RewindWitch": {
+    "id": "RewindWitch",
+    "name": "Rewind - Witchization",
+    "desc": "- Max Stack: 2\n- HP cannot drop below 1\n- If fatal damage is taken, heal to full HP at the next turn start, recover from Stagger, clear all negative effects, gain 1 [Attack Power Up], and lose 1 Stack",
+    "summary": "",
+    "flavor": ""
+  },
+  "RitualSword": {
+    "id": "RitualSword",
+    "name": "Ritual Sword",
+    "desc": "- Damage dealt to Abnormalities and enemies with less than 0 SP +10%\n- damage dealt to Witch units +50%\n- When inflicting [Laceration] Potency or Count, inflict +1 more\n- On hit with the last Coin of a base Skill, additionally inflict 1 [Laceration] Count, and trigger [Laceration] once more on the target",
+    "summary": "",
+    "flavor": ""
+  },
+  "Repose": {
+    "id": "Repose",
+    "name": "Repose",
+    "desc": "- Max Stack: 13\n- Damage taken +2% for each Stack\n- If this unit has [Witchization], Damage taken -2% for each Stack instead\n- Damage taken from E.G.O Corrosion Skills -80%",
+    "summary": "",
+    "flavor": ""
+  },
+  "ReposeMark": {
+    "id": "ReposeMark",
+    "name": "Repose Mark",
+    "desc": "- Internal marker for the Repose Ritual's additional damage (no effect on its own)",
+    "summary": "",
+    "flavor": ""
+  }
+}

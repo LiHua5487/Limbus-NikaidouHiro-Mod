@@ -1,0 +1,144 @@
+{
+  "list": [
+    {
+      "id": 104970,
+      "appearance": "!custom_8164_MaouHeathclif_DeadRabbitsAppearance",
+      "mp": 45,
+      "unitKeywordList": [
+        "Witch",
+        "WitchIsland"
+      ],
+      "associationList": [],
+      "skillKeywordList": [
+        "Laceration",
+        "Combustion"
+      ],
+      "characterId": 4,
+      "panicType": 9999,
+      "panicSkillOnErosion": 1000104,
+      "defenseSkillIDList": [
+        9750104,
+        9750114
+      ],
+      "slotWeightConditionList": [
+        "Default1"
+      ],
+      "rank": 3,
+      "hp": {
+        "defaultStat": 25,
+        "incrementByLevel": 0.9
+      },
+      "defCorrection": -2,
+      "minSpeedList": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "maxSpeedList": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "uniqueAttribute": "CRIMSON",
+      "mentalConditionInfo": {
+        "add": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnWinDuelAsParryingCountMultiply10AndPlus20Percent"
+              },
+              {
+                "conditionID": "OnKillEnemyAsLevelRatioMultiply10"
+              },
+              {
+                "conditionID": "OnKillEnemyByOtherAllyAsLevelRatioMultiply5"
+              }
+            ]
+          }
+        ],
+        "min": [
+          {
+            "level": 1,
+            "conditionIDList": [
+              {
+                "conditionID": "OnLoseDuelAsParryingCountMultiply5AndPlus10Percent"
+              }
+            ]
+          }
+        ]
+      },
+      "breakSection": {
+        "sectionList": [
+          80,
+          50,
+          20
+        ]
+      },
+      "resistInfo": {
+        "atkResistList": [
+          {
+            "type": "SLASH",
+            "value": 2
+          },
+          {
+            "type": "PENETRATE",
+            "value": 1
+          },
+          {
+            "type": "HIT",
+            "value": 0.5
+          }
+        ]
+      },
+      "attributeList": [
+        {
+          "skillId": 9750101,
+          "number": 3
+        },
+        {
+          "skillId": 9750102,
+          "number": 2
+        },
+        {
+          "skillId": 9750103,
+          "number": 1
+        },
+        {
+          "skillId": 9750111,
+          "number": 0
+        },
+        {
+          "skillId": 9750112,
+          "number": 0
+        },
+        {
+          "skillId": 9750113,
+          "number": 0
+        },
+        {
+          "skillId": 9750131,
+          "number": 0
+        },
+        {
+          "skillId": 9750132,
+          "number": 0
+        },
+        {
+          "skillId": 9750133,
+          "number": 0
+        },
+        {
+          "skillId": 9750121,
+          "number": 0
+        },
+        {
+          "skillId": 9750122,
+          "number": 0
+        }
+      ]
+    }
+  ]
+}

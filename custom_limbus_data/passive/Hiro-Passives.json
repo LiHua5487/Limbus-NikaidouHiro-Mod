@@ -1,0 +1,79 @@
+{
+  "list": [
+    {
+      "id": 97501001,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:OnSucceedAttack/LUA:nikaidou_hiro/LUAMAIN:hiro_hit",
+        "Modular/TIMING:RoundStart/LUA:nikaidou_hiro/LUAMAIN:hiro_curse_rs",
+        "Modular/TIMING:AfterSlots/LUA:nikaidou_hiro/LUAMAIN:hiro_skill_phase",
+        "Modular/TIMING:EndBattle/LUA:nikaidou_hiro/LUAMAIN:hiro_curse_eb",
+        "Modular/TIMING:OnDie/LUA:nikaidou_hiro/LUAMAIN:hiro_on_die_state"
+      ]
+    },
+    {
+      "id": 97501002,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EncounterStart/buff(Self,Rewind,2,0,0)",
+        "Modular/TIMING:Immortal/LUA:nikaidou_hiro/LUAMAIN:hiro_immortal",
+        "Modular/TIMING:RoundStart/LUA:nikaidou_hiro/LUAMAIN:hiro_revive"
+      ]
+    },
+    {
+      "id": 97501003,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EncounterStart/aggro(Self,900,next,0)",
+        "Modular/TIMING:DuelClash/LUA:nikaidou_hiro/LUAMAIN:hiro_judge_clash",
+        "Modular/TIMING:ChangeTakeDamage/LUA:nikaidou_hiro/LUAMAIN:hiro_judge_taken"
+      ]
+    },
+    {
+      "id": 97501004,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:EncounterStart/passiveadd(Ally99,97501007,nodupe)",
+        "Modular/TIMING:EncounterStart/LUA:nikaidou_hiro/LUAMAIN:hiro_repose_es",
+        "Modular/TIMING:RoundStart/passiveadd(Ally99,97501007,nodupe)",
+        "Modular/TIMING:RoundStart/LUA:nikaidou_hiro/LUAMAIN:hiro_answer_rs",
+        "Modular/TIMING:EndBattle/LUA:nikaidou_hiro/LUAMAIN:hiro_bgm_eb"
+      ]
+    },
+    {
+      "id": 97501007,
+      "attributeStockCondition": [],
+      "requireIDList": [
+        "Modular/TIMING:WhenUse/LUA:nikaidou_hiro/LUAMAIN:hiro_repose_ego_use"
+      ]
+    },
+    {
+      "id": 97501005,
+      "attributeStockCondition": [
+        {
+          "type": "CRIMSON",
+          "value": 2
+        },
+        {
+          "type": "INDIGO",
+          "value": 2
+        }
+      ],
+      "requireIDList": [
+        "Modular/TIMING:RoundStart/LUA:nikaidou_hiro/LUAMAIN:hiro_fear_rs"
+      ]
+    },
+    {
+      "id": 97501006,
+      "attributeStockCondition": [
+        {
+          "type": "CRIMSON",
+          "value": 5
+        }
+      ],
+      "requireIDList": [
+        "Modular/TIMING:DuelClash/LUA:nikaidou_hiro/LUAMAIN:hiro_support_clash"
+      ]
+    }
+  ]
+}

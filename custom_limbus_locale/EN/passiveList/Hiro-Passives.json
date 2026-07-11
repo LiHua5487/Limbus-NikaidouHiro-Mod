@@ -1,0 +1,51 @@
+{
+  "97501001": {
+    "a": 0,
+    "id": "97501001",
+    "name": "Great Witch's Curse",
+    "desc": "Gain [WitchFactor] when meeting one of the following conditions:\n- On hit: gain 3 Stack\n- On kill: gain 10 Stack\n- When this unit's SP decreases: gain 1 Stack for each SP lost\n- When [Rewind] or [RewindWitch] is consumed after preventing fatal damage: gain 20 Stack for each Stack consumed\n\nWhen meeting one of the following conditions, gain [Witchization] (once per encounter):\n- This unit has -20 or less SP\n- This unit has 50+ [WitchFactor]\n\nThe first time this unit gains [Witchization]:\n- If SP is above -20, set SP to -20 (does not gain [WitchFactor] due to this effect)\n- Remove all Stagger thresholds and recover from Stagger\n- Convert all [Rewind] into [RewindWitch]\n- Gain [RitualSword]\n\nWhile this unit has [Witchization], use Negative Coin Skills as base Skills. Otherwise, use Positive Coin Skills as base Skills",
+    "summary": ""
+  },
+  "97501002": {
+    "a": 0,
+    "id": "97501002",
+    "name": "Death Rewind",
+    "desc": "At encounter start, gain 2 [Rewind]",
+    "summary": ""
+  },
+  "97501003": {
+    "a": 0,
+    "id": "97501003",
+    "name": "Court of Judgment",
+    "desc": "At encounter start, the leftmost Slot on the Dashboard gains 10 Aggro\nCan redirect attacks toward units with [Rebuttal] regardless of Speed (Focused encounters only)\nWhen Clashing against units with [Rebuttal], Clash Power +2\nDamage taken from units with [Rebuttal] +20%",
+    "summary": ""
+  },
+  "97501004": {
+    "a": 0,
+    "id": "97501004",
+    "name": "I Return to Today With Every Answer",
+    "desc": "Gain [Repose] when meeting one of the following conditions:\n- current count: +1 for each ally with [Witchization], and +1 for each enemy\n- accumulated count: gain 1 Stack for each Corroding ally, and when an ally uses E.G.O Corrosion Skills, gain 1 Stack\n\nAt 13 [Repose], and this unit is not Corroding:\n- replace the leftmost Base Skill on the Dashboard with \"Witch Repose Ritual\"\n\nWhile this unit has [Witchization], if its SP is -35 or lower:\n- replace the leftmost Base Skill on the Dashboard with \"This Is Only to Grant You Deliverance\"\n- If this unit is Corroding, replace the Skill at the start of the next turn instead",
+    "summary": ""
+  },
+  "97501007": {
+    "a": 0,
+    "id": "97501007",
+    "name": "Repose E.G.O Watch",
+    "desc": "",
+    "summary": ""
+  },
+  "97501005": {
+    "a": 0,
+    "id": "97501005",
+    "name": "I'm Afraid I Can Never Go Back",
+    "desc": "If this unit has [Witchization] and does not have [RewindWitch]:\n- At turn start, allies other than this unit lose 10 SP\n- At turn start, allies with less than 0 SP, including this unit, gain 1 [Protection] and 1 [AttackDmgUp]",
+    "summary": ""
+  },
+  "97501006": {
+    "a": 0,
+    "id": "97501006",
+    "name": "Exterminate Evil",
+    "desc": "When the ally with the lowest SP Clashes against an Abnormality or an enemy with less than 0 SP, that ally gains Clash Power +1 and deals +10% damage",
+    "summary": ""
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "9750101": {
+    "a": 0,
+    "id": "9750101",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "This Is Incorrect",
+        "desc": "[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Base Power +1 for every 10 [WitchFactor] on self (max 2)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Combustion] Count",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750102": {
+    "a": 0,
+    "id": "9750102",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "Only I Can Correct This World",
+        "desc": "[WhenUse] If the ([Combustion] + [Laceration]) on target is above 6, Coin Power +1\n[WhenUse] Base Power +1 for every 10 [WitchFactor] on self (max 3)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Laceration] and 1 [Combustion]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Laceration] and 1 [Combustion]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 1 [Laceration] and 1 [Combustion]\n[OnSucceedAttack] If target has [Rebuttal], deal Pride damage equal to 50% of this Coin's damage",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750103": {
+    "a": 0,
+    "id": "9750103",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "Die! Die! Die!",
+        "desc": "[WhenUse] Gain 5 [WitchFactor]\n- If this Skill kills or Staggers the target, gain 20 more [WitchFactor]\n[WhenUse] If the ([Combustion] + [Laceration]) on target is above 6, Coin Power +1\n[WhenUse] Base Power +1 for every 10 [WitchFactor] on self (max 4)\n[WhenUse] If target has [Rebuttal], convert all Coins on this Skill to [SuperCoin]s, and damage +([Rebuttal] x 10)% (max 50%)\n[EndSkill] Lose 10 SP",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration] and 1 [Laceration] Count\n[OnSucceedAttack] Gain 2 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Combustion] and 1 [Combustion] Count\n[OnSucceedAttack] Gain 2 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Trigger [Combustion] once on target, then reduce its Count by 1\n[OnSucceedAttack] Gain 2 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750104": {
+    "a": 0,
+    "id": "9750104",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "Perjury",
+        "desc": "[StartBattle] Inflict 3 [Rebuttal] on target (once per turn)\n[WhenUse] If this unit has no [Rewind] and no [RewindWitch], gain Shield by 50% of Max HP",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750111": {
+    "a": 0,
+    "id": "9750111",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "Clear the Error",
+        "desc": "[Witchization] Negative Coin Skill\nAt 50+ [Witchization], this Skill gains [CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 7)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration] Count\n[OnSucceedAttack] Gain 1 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration]\n[OnSucceedAttack] Gain 1 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750112": {
+    "a": 0,
+    "id": "9750112",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "You Are Wrong, I Am Not Evil",
+        "desc": "[Witchization] Negative Coin Skill\nAt 50+ [Witchization], this Skill gains [CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 3)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 10)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn). If target has [Rebuttal], damage +([Rebuttal] x 10)% (max 30%)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration]\n[OnSucceedAttack] Gain 1 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration]\n[OnSucceedAttack] Gain 1 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] If target has [Rebuttal], deal Pride damage equal to 50% of this Coin's damage",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750113": {
+    "a": 0,
+    "id": "9750113",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "Then I Will Kill the Witch",
+        "desc": "[Witchization] Negative Coin Skill\nAt 50+ [Witchization], this Skill gains [CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 4)\n[WhenUse] Final Power +1 for every 10 [WitchFactor] on self (max 8)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 10)\n[WhenUse] If target has [Rebuttal], damage +([Rebuttal] x 10)% (max 50%)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Inflict 2 [Laceration] Count\n[OnSucceedAttack] Gain 2 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Inflict 2 [Laceration]\n[OnSucceedAttack] Gain 2 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Trigger [Laceration] once on target, then reduce its Count by 1\n[OnSucceedAttack] Gain 2 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750114": {
+    "a": 0,
+    "id": "9750114",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "I Will Save You All",
+        "desc": "[StartBattle] If this unit has less than -30 SP, gain 10 SP\n[StartBattle] Inflict 3 [Rebuttal] on target (once per turn)\n[WhenUse] Base Power +1 for every 10 [Witchization] on self (max 4)\n[EndBattle] Set the SP of 1 other ally to -45 (once per turn). Selects from allies who can corrode and are not currently corroding, prioritizing the rearmost ally in deployment order",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedEvade] Gain 5 SP (max 3 times; cannot raise SP above -10)",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750121": {
+    "a": 0,
+    "id": "9750121",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "This Is Only to Grant You Deliverance",
+        "desc": "[WhenUse] Gain 10 [Witchization]. At 50+ [Witchization], damage +1% for each Stack above 50 (max 50%)\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 4)\n[WhenUse] Final Power +1 for every 10 [WitchFactor] on self (max 10)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 15)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Inflict 3 [Laceration] and 2 [Laceration] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Inflict 3 [Laceration] and 2 [Laceration] Count",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Trigger [Laceration] 3 times on target, then reduce its Count by 3",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750122": {
+    "a": 0,
+    "id": "9750122",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "Witch Repose Ritual",
+        "desc": "This Skill does not trigger Defense Skills\n[WhenUse] Consume [RitualSword], damage +100%\n[WhenUse] Consume all [Repose] on self, Base Power +1 for each Stack consumed(max 13)\n[WhenUse] Final Power +1 for every 10 [WitchFactor] on self (max 10)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 15, cannot reduce SP below -40)\n[EndSkill] Remove [Witchization] from all units; afterwards, this unit can no longer gain [Repose]\n[EndSkill] If this unit's SP is below 0, recover it to 0, then recover additional SP equal to the previous difference from 0 (1 SP for each point of difference)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Consume all units' [WitchFactor]; deal fixed damage equal to 1% of the target's Max HP for every 10 Stacks consumed (max 50%, each target by its own Max HP)",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750131": {
+    "a": 0,
+    "id": "9750131",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "Clear the Error",
+        "desc": "[Witchization] Negative Coin Skill, [CantIdentify] version\n[CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 7)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration] Count\n[OnSucceedAttack] Gain 1 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration]\n[OnSucceedAttack] Gain 1 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750132": {
+    "a": 0,
+    "id": "9750132",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "You Are Wrong, I Am Not Evil",
+        "desc": "[Witchization] Negative Coin Skill, [CantIdentify] version\n[CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 3)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 10)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn). If target has [Rebuttal], damage +([Rebuttal] x 10)% (max 30%)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration]\n[OnSucceedAttack] Gain 1 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] Inflict 2 [Laceration]\n[OnSucceedAttack] Gain 1 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[OnSucceedAttack] If target has [Rebuttal], deal Pride damage equal to 50% of this Coin's damage",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "9750133": {
+    "a": 0,
+    "id": "9750133",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "Then I Will Kill the Witch",
+        "desc": "[Witchization] Negative Coin Skill, [CantIdentify] version\n[CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 4)\n[WhenUse] Final Power +1 for every 10 [WitchFactor] on self (max 8)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 10)\n[WhenUse] If target has [Rebuttal], damage +([Rebuttal] x 10)% (max 50%)",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Inflict 2 [Laceration] Count\n[OnSucceedAttack] Gain 2 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Inflict 2 [Laceration]\n[OnSucceedAttack] Gain 2 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          },
+          {
+            "coindescs": [
+              {
+                "desc": "[SuperCoin]\n[OnSucceedAttack] Trigger [Laceration] once on target, then reduce its Count by 1\n[OnSucceedAttack] Gain 2 [WitchFactor]",
+                "summary": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
