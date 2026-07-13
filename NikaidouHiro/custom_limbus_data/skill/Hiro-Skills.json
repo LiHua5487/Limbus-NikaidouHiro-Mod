@@ -1348,6 +1348,9 @@
           "skillLevelCorrection": 5,
           "abilityScriptList": [
             {
+              "scriptName": "CannotReusedSkill"
+            },
+            {
               "scriptName": "CanChangeTargetIgnoreSpeed"
             },
             {

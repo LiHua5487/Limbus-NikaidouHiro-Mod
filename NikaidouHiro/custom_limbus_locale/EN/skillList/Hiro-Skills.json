@@ -6,7 +6,7 @@
       {
         "level": 1,
         "name": "This Is Incorrect",
-        "desc": "[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Base Power +1 for every 10 [WitchFactor] on self (max 2)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn)",
+        "desc": "[WhenUse] Coin Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Base Power +1 for every 10 [WitchFactor] on self (max 2)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn across all of this unit's basic attack Skills)",
         "rawDesc": "",
         "abName": "",
         "coinlist": [
@@ -37,7 +37,7 @@
       {
         "level": 1,
         "name": "Only I Can Correct This World",
-        "desc": "[WhenUse] If the ([Combustion] + [Laceration]) on target is above 6, Coin Power +1\n[WhenUse] Base Power +1 for every 10 [WitchFactor] on self (max 3)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn)",
+        "desc": "[WhenUse] If the ([Combustion] + [Laceration]) on target is above 6, Coin Power +1\n[WhenUse] Base Power +1 for every 10 [WitchFactor] on self (max 3)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn across all of this unit's basic attack Skills)",
         "rawDesc": "",
         "abName": "",
         "coinlist": [
@@ -115,6 +115,7 @@
       {
         "level": 1,
         "name": "Perjury",
+        "flavor": "I was sleeping so soundly back then.",
         "desc": "[StartBattle] Inflict 3 [Rebuttal] on target (once per turn)\n[WhenUse] If this unit has no [Rewind] and no [RewindWitch], gain Shield by 50% of Max HP",
         "rawDesc": "",
         "abName": "",
@@ -138,7 +139,7 @@
       {
         "level": 1,
         "name": "Clear the Error",
-        "desc": "[Witchization] Negative Coin Skill\nAt 50+ [Witchization], this Skill gains [CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 7)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn)",
+        "desc": "[Witchization] Negative Coin Skill\nAt 50+ [Witchization], this Skill gains [CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 7)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn across all of this unit's basic attack Skills)",
         "rawDesc": "",
         "abName": "",
         "coinlist": [
@@ -169,7 +170,7 @@
       {
         "level": 1,
         "name": "You Are Wrong, I Am Not Evil",
-        "desc": "[Witchization] Negative Coin Skill\nAt 50+ [Witchization], this Skill gains [CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 3)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 10)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn). If target has [Rebuttal], damage +([Rebuttal] x 10)% (max 30%)",
+        "desc": "[Witchization] Negative Coin Skill\nAt 50+ [Witchization], this Skill gains [CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 3)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 10)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn across all of this unit's basic attack Skills). If target has [Rebuttal], damage +([Rebuttal] x 10)% (max 30%)",
         "rawDesc": "",
         "abName": "",
         "coinlist": [
@@ -247,7 +248,8 @@
       {
         "level": 1,
         "name": "I Will Save You All",
-        "desc": "[StartBattle] If this unit has less than -30 SP, gain 10 SP\n[StartBattle] Inflict 3 [Rebuttal] on target (once per turn)\n[WhenUse] Base Power +1 for every 10 [Witchization] on self (max 4)\n[EndBattle] Set the SP of 1 other ally to -45 (once per turn). Selects from allies who can corrode and are not currently corroding, prioritizing the rearmost ally in deployment order",
+        "flavor": "While I can still hold on to my sanity... I must turn every last one of them into a witch.",
+        "desc": "[StartBattle] If this unit has less than -20 SP, gain 10 SP\n[StartBattle] Inflict 3 [Rebuttal] on target (once per turn)\n[WhenUse] Base Power +1 for every 10 [Witchization] on self (max 4)\n[EndBattle] Set the SP of 1 other ally to -45 (once per turn). Selects from allies who can corrode and are not currently corroding, prioritizing the rearmost ally in deployment order",
         "rawDesc": "",
         "abName": "",
         "coinlist": [
@@ -270,7 +272,8 @@
       {
         "level": 1,
         "name": "This Is Only to Grant You Deliverance",
-        "desc": "[WhenUse] Gain 10 [Witchization]. At 50+ [Witchization], damage +1% for each Stack above 50 (max 50%)\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 4)\n[WhenUse] Final Power +1 for every 10 [WitchFactor] on self (max 10)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 15)",
+        "flavor": "Once the Repose Ritual has failed... this alone, I cannot abide... It hurts... I want to be released...",
+        "desc": "[WhenUse] Gain 10 [Witchization]. At 50+ [Witchization], damage +1% for each Stack above 50 (max 50%)\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 4)\n[WhenUse] Final Power +1 for every 10 [WitchFactor] on self (max 10)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 10)",
         "rawDesc": "",
         "abName": "",
         "coinlist": [
@@ -309,7 +312,8 @@
       {
         "level": 1,
         "name": "Witch Repose Ritual",
-        "desc": "This Skill does not trigger Defense Skills\n[WhenUse] Consume [RitualSword], damage +100%\n[WhenUse] Consume all [Repose] on self, Base Power +1 for each Stack consumed(max 13)\n[WhenUse] Final Power +1 for every 10 [WitchFactor] on self (max 10)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 15, cannot reduce SP below -40)\n[EndSkill] Remove [Witchization] from all units; afterwards, this unit can no longer gain [Repose]\n[EndSkill] If this unit's SP is below 0, recover it to 0, then recover additional SP equal to the previous difference from 0 (1 SP for each point of difference)",
+        "flavor": "\"Thirteen witches must focus their strongest thoughts upon the Ritual Sword. And then...\"",
+        "desc": "This Skill does not trigger Defense Skills\nThis Skill cannot be reused by external effects\n[WhenUse] Consume [RitualSword], damage +100%\n[WhenUse] Consume all [Repose] on self, Base Power +1 for each Stack consumed(max 13)\n[WhenUse] Final Power +1 for every 10 [WitchFactor] on self (max 10)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 15, cannot reduce SP below -40)\n[EndSkill] Remove [Witchization] from all units; afterwards, this unit can no longer gain [Repose]\n[EndSkill] If this unit's SP is below 0, recover it to 0, then recover additional SP equal to the previous difference from 0 (1 SP for each point of difference)",
         "rawDesc": "",
         "abName": "",
         "coinlist": [
@@ -332,7 +336,7 @@
       {
         "level": 1,
         "name": "Clear the Error",
-        "desc": "[Witchization] Negative Coin Skill, [CantIdentify] version\n[CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 7)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn)",
+        "desc": "[Witchization] Negative Coin Skill, [CantIdentify] version\n[CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 2)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 7)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn across all of this unit's basic attack Skills)",
         "rawDesc": "",
         "abName": "",
         "coinlist": [
@@ -363,7 +367,7 @@
       {
         "level": 1,
         "name": "You Are Wrong, I Am Not Evil",
-        "desc": "[Witchization] Negative Coin Skill, [CantIdentify] version\n[CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 3)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 10)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn). If target has [Rebuttal], damage +([Rebuttal] x 10)% (max 30%)",
+        "desc": "[Witchization] Negative Coin Skill, [CantIdentify] version\n[CantIdentify]\n[WhenUse] Base Power +1 for every 6 ([Combustion] + [Laceration]) on target (max 3)\n[WhenUse] Final Power +1 for every 15 [WitchFactor] on self (max 5)\n[WhenUse] Lose (5 + [Witchization] / 5) SP (max 10)\n[WinDuel] Inflict 1 [Rebuttal] (once per turn across all of this unit's basic attack Skills). If target has [Rebuttal], damage +([Rebuttal] x 10)% (max 30%)",
         "rawDesc": "",
         "abName": "",
         "coinlist": [

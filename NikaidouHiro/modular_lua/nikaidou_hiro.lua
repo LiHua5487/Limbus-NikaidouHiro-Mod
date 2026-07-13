@@ -71,6 +71,9 @@ end
 
 local function set_hiro_appearance(is_witch, force)
     if appearance == nil then return end
+    -- 死亡单位仍会进入 AfterSlots/RoundStart 被动；此时换回主外观会把死亡动作刷新成 idle。
+    -- OnDie 已把 D_APPEAR 清零，真正复活并恢复 HP 后会自然重新同步。
+    if gethp(SELF, "normal") <= 0 then return end
     if is_witch then
         if not force and data(D_APPEAR) == 1 then return end
         appearance(SELF, "!custom_8172_MaouHeathclif_MainAppearance")
@@ -643,13 +646,13 @@ function hiro_power()
         if reb > 0 then dmgmult(clamp(reb * 10, 0, 50)) end
         drain_sp(clamp(5 + math.floor(st(SELF, WZ) / 5), 0, 10))
     elseif id == 9750121 then
-        -- 解脱：获得10层魔女化；魔女化超出50每层+1%伤害(最多50)；sum/6基础(最多4)；wf/10最终(最多10)；失理智(最多15)
+        -- 解脱：获得10层魔女化；魔女化超出50每层+1%伤害(最多50)；sum/6基础(最多4)；wf/10最终(最多10)；失理智(最多10)
         setdata(SELF, D_DELIV_BGM_HELD, 0)
         setdata(SELF, D_DELIV_BGM_NEW, 0)
         buff(SELF, WZ, 10, 0, 0)
         local w = st(SELF, WZ)
         if w > 50 then dmgmult(clamp(w - 50, 0, 50)) end
-        drain_sp(clamp(5 + math.floor(st(SELF, WZ) / 5), 0, 15))
+        drain_sp(clamp(5 + math.floor(st(SELF, WZ) / 5), 0, 10))
     elseif id == 9750122 then
         -- 安息仪式：消耗[仪礼剑]+100%伤害；消耗所有[安息]每层+1基础(最多13)；wf/10最终(最多10)；
         -- 失理智(最多15、不低于-40)。[魔女因子]在硬币命中时消耗。
@@ -708,14 +711,31 @@ function hiro_on_die_state()
     setdata(SELF, D_APPEAR, 0)
 end
 
--- 用牌前确保使用对应的魔女化/无差别技能（BeforeUse）
+-- 用牌前按「实际发动瞬间」的魔女化状态确定技能（BeforeUse）。
+-- 仪表盘上选定的技能可能在本回合较早的「魔女安息仪式」后已经过期，
+-- 因此这里必须同时处理常态→魔女化与魔女化→常态两个方向。
 function hiro_before_use()
     if is_corroding() then return end   -- 侵蚀中：不改写正在使用的技能（放行侵蚀EGO）
     local w = st(SELF, WZ)
     local id = current_skill_id()
     if id == RITUAL then hiro_ritual_keep_form(); return end
-    if id == DELIV then return end   -- 特殊技能：已在 slot0 放好，保持不变
-    if w == 0 then return end
+
+    if w <= 0 then
+        -- 「解脱」由 DLL 的 IsActionable 补丁取消整次行动；绝不替换成常态三技能。
+        -- 正常情况下该行动不会进入 BeforeUse，这里只保留防御性返回。
+        if id == DELIV then
+            return
+        elseif id == 9750111 or id == 9750131 then
+            changeskill(9750101)
+        elseif id == 9750112 or id == 9750132 then
+            changeskill(9750102)
+        elseif id == 9750113 or id == 9750133 then
+            changeskill(9750103)
+        end
+        return
+    end
+
+    if id == DELIV then return end   -- 仍在魔女化：允许发动解脱
     local s1, s2, s3 = 9750111, 9750112, 9750113
     if w >= 50 then s1, s2, s3 = 9750131, 9750132, 9750133 end
     if id == 9750101 or id == 9750111 or id == 9750131 then
@@ -820,9 +840,9 @@ function hiro_witch_guard_power()
     base(clamp(math.floor(st(SELF, WZ) / 10), 0, 4))
 end
 
--- 由我来拯救·战斗开始：理智<-30则恢复10
+-- 由我来拯救·战斗开始：理智<-20则恢复10
 function hiro_def_witch_start()
-    if getsp(SELF) < -30 then heal_self_sp(10) end
+    if getsp(SELF) < -20 then heal_self_sp(10) end
 end
 
 -- 由我来拯救·闪避成功：回5理智（每回合≤3次，不超过-10）

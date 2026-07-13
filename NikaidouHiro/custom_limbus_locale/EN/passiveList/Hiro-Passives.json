@@ -11,21 +11,24 @@
     "id": "97501002",
     "name": "Death Rewind",
     "desc": "At encounter start, gain 2 [Rewind]",
-    "summary": ""
+    "summary": "",
+    "flavor": "Let me meet them once more. That is my only wish."
   },
   "97501003": {
     "a": 0,
     "id": "97501003",
     "name": "Court of Judgment",
     "desc": "At encounter start, the leftmost Slot on the Dashboard gains 10 Aggro\nCan redirect attacks toward units with [Rebuttal] regardless of Speed (Focused encounters only)\nWhen Clashing against units with [Rebuttal], Clash Power +2\nDamage taken from units with [Rebuttal] +20%",
-    "summary": ""
+    "summary": "",
+    "flavor": "\"Everyone, take out your phones and vote for the most suspicious suspect... And now, the witch trial is in session!\""
   },
   "97501004": {
     "a": 0,
     "id": "97501004",
     "name": "I Return to Today With Every Answer",
     "desc": "Gain [Repose] when meeting one of the following conditions:\n- current count: +1 for each ally with [Witchization], and +1 for each enemy\n- accumulated count: gain 1 Stack for each Corroding ally, and when an ally uses E.G.O Corrosion Skills, gain 1 Stack\n\nAt 13 [Repose], and this unit is not Corroding:\n- replace the leftmost Base Skill on the Dashboard with \"Witch Repose Ritual\"\n\nWhile this unit has [Witchization], if its SP is -35 or lower:\n- replace the leftmost Base Skill on the Dashboard with \"This Is Only to Grant You Deliverance\"\n- If this unit is Corroding, replace the Skill at the start of the next turn instead",
-    "summary": ""
+    "summary": "",
+    "flavor": "No matter how it ends, I must uphold what is right."
   },
   "97501007": {
     "a": 0,
