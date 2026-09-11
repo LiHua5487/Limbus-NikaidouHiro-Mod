@@ -1,0 +1,10 @@
+{
+  "UnitKeyword_Witch": {
+    "id": "UnitKeyword_Witch",
+    "content": "魔女"
+  },
+  "UnitKeyword_WitchIsland": {
+    "id": "UnitKeyword_WitchIsland",
+    "content": "魔女岛"
+  }
+}

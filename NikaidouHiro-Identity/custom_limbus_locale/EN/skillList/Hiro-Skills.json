@@ -1,0 +1,227 @@
+{
+  "9750101": {
+    "a": 0,
+    "id": "9750101",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "这是不正确的",
+        "desc": "[WhenUse]目标的[Combustion]与[Laceration]强度之和每有6级，使本技能硬币威力+1（最多+2）\n[WhenUse]自身的[WitchFactor]层数每有10层，使本技能基础威力+1（最多+2）\n[WinDuel]对目标施加1层[Rebuttal]（自身所有基础攻击技能每回合最多1次）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2层[Laceration]", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2层[Combustion]", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750102": {
+    "a": 0,
+    "id": "9750102",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "能导正这个世界的，只有我",
+        "desc": "[WhenUse]若目标的[Combustion]与[Laceration]强度之和不低于6级，则使本技能硬币威力+1\n[WhenUse]自身的[WitchFactor]层数每有10层，使本技能基础威力+1（最多+3）\n[WinDuel]对目标施加1层[Rebuttal]（自身所有基础攻击技能每回合最多1次）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加1级[Laceration]强度与1级[Combustion]强度", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加1级[Laceration]强度与1级[Combustion]强度", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加1级[Laceration]强度与1级[Combustion]强度\n[OnSucceedAttack]若目标带有[Rebuttal]，则追加本硬币伤害量50%的傲慢伤害", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750103": {
+    "a": 0,
+    "id": "9750103",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "去死！去死！去死！",
+        "desc": "[WhenUse]使自身获得5层[WitchFactor]；若本技能击杀目标或使目标陷入混乱，额外获得20层[WitchFactor]\n[WhenUse]若目标的[Combustion]与[Laceration]强度之和不低于6级，则使本技能硬币威力+1\n[WhenUse]自身的[WitchFactor]层数每有10层，使本技能基础威力+1（最多+4）\n[WhenUse]若目标带有[Rebuttal]，则将本技能的所有硬币转化为[SuperCoin]，且伤害量+（目标的[Rebuttal]层数×10）%（最多+50%）\n[EndSkill]自身失去10点理智值",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2级[Laceration]强度与1层[Laceration]\n[OnSucceedAttack]使自身获得2层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2级[Combustion]强度与1层[Combustion]\n[OnSucceedAttack]使自身获得2层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]触发目标1次[Combustion]，随后使其[Combustion]层数-1\n[OnSucceedAttack]使自身获得2层[WitchFactor]", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750104": {
+    "a": 0,
+    "id": "9750104",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "伪证",
+        "flavor": "我当时睡得可香了。",
+        "desc": "[StartBattle]对目标施加3层[Rebuttal]（每回合最多1次）\n[WhenUse]若自身不带有[Rewind]与[RewindWitch]，则获得相当于生命上限50%的护盾",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [{"coindescs": [{"desc": "", "summary": ""}]}]
+      }
+    ]
+  },
+  "9750111": {
+    "a": 0,
+    "id": "9750111",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "清除错误",
+        "desc": "[Wichization-NikaidouHiro]减算硬币技能\n[Wichization-NikaidouHiro]达到50层时，本技能获得[CantIdentify]\n[WhenUse]目标的[Combustion]与[Laceration]强度之和每有6级，使本技能基础威力+1（最多+2）\n[WhenUse]自身的[WitchFactor]层数每有15层，使本技能最终威力+1（最多+5）\n[WhenUse]自身失去（5+自身的[Wichization-NikaidouHiro]层数/5）点理智值（最多7点）\n[WinDuel]对目标施加1层[Rebuttal]（自身所有基础攻击技能每回合最多1次）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2层[Laceration]\n[OnSucceedAttack]使自身获得1层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2级[Laceration]强度\n[OnSucceedAttack]使自身获得1层[WitchFactor]", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750112": {
+    "a": 0,
+    "id": "9750112",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "你错了，我不是邪恶",
+        "desc": "[Wichization-NikaidouHiro]减算硬币技能\n[Wichization-NikaidouHiro]达到50层时，本技能获得[CantIdentify]\n[WhenUse]目标的[Combustion]与[Laceration]强度之和每有6级，使本技能基础威力+1（最多+3）\n[WhenUse]自身的[WitchFactor]层数每有15层，使本技能最终威力+1（最多+5）\n[WhenUse]自身失去（5+自身的[Wichization-NikaidouHiro]层数/5）点理智值（最多10点）\n[WinDuel]对目标施加1层[Rebuttal]（自身所有基础攻击技能每回合最多1次）；若目标带有[Rebuttal]，使本技能伤害量+（目标的[Rebuttal]层数×10）%（最多+30%）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2级[Laceration]强度\n[OnSucceedAttack]使自身获得1层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2级[Laceration]强度\n[OnSucceedAttack]使自身获得1层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]若目标带有[Rebuttal]，则追加本硬币伤害量50%的傲慢伤害", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750113": {
+    "a": 0,
+    "id": "9750113",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "那就由我来杀死魔女",
+        "desc": "[Wichization-NikaidouHiro]减算硬币技能\n[Wichization-NikaidouHiro]达到50层时，本技能获得[CantIdentify]\n[WhenUse]目标的[Combustion]与[Laceration]强度之和每有6级，使本技能基础威力+1（最多+4）\n[WhenUse]自身的[WitchFactor]层数每有10层，使本技能最终威力+1（最多+8）\n[WhenUse]自身失去（5+自身的[Wichization-NikaidouHiro]层数/5）点理智值（最多10点）\n[WhenUse]若目标带有[Rebuttal]，使本技能伤害量+（目标的[Rebuttal]层数×10）%（最多+50%）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]施加2层[Laceration]\n[OnSucceedAttack]使自身获得2层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]施加2级[Laceration]强度\n[OnSucceedAttack]使自身获得2层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]触发目标1次[Laceration]，随后使其[Laceration]层数-1\n[OnSucceedAttack]使自身获得2层[WitchFactor]", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750114": {
+    "a": 0,
+    "id": "9750114",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "由我来拯救你们",
+        "flavor": "趁着我还能维持理智……我必须让她们每个人都堕为魔女。",
+        "desc": "[StartBattle]若自身理智值低于-20点，则恢复10点理智值\n[StartBattle]对目标施加3层[Rebuttal]（每回合最多1次）\n[WhenUse]自身每有10层[Wichization-NikaidouHiro]，使本技能基础威力+1（最多+4）\n[EndBattle]使除自身以外的1名友方单位的理智值降低至-45点（每回合最多1次）；只从可侵蚀且当前未陷入侵蚀的友方单位中选择，优先选择编队顺序靠后的单位",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [{"coindescs": [{"desc": "[OnSucceedEvade]使自身恢复5点理智值（最多3次，不会使自身理智值高于-10点）", "summary": ""}]}]
+      }
+    ]
+  },
+  "9750121": {
+    "a": 0,
+    "id": "9750121",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "这只是为了让你们得到解脱",
+        "flavor": "一旦安息仪式失败……唯独这一点，是我无法容忍的……好痛苦，好想解脱……",
+        "desc": "[WhenUse]使自身获得10层[Wichization-NikaidouHiro]；[Wichization-NikaidouHiro]达到50层后，每超出1层，使本技能伤害量+2%（最多+100%）\n[WhenUse]目标的[Combustion]与[Laceration]强度之和每有6级，使本技能基础威力+1（最多+4）\n[WhenUse]自身的[WitchFactor]层数每有10层，使本技能最终威力+1（最多+10）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]施加3级[Laceration]强度与2层[Laceration]", "summary": ""}]},
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]施加3级[Laceration]强度与2层[Laceration]", "summary": ""}]},
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]触发目标3次[Laceration]，随后使其[Laceration]层数-3", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750122": {
+    "a": 0,
+    "id": "9750122",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "魔女安息仪式",
+        "flavor": "“十三位魔女需朝着仪礼剑凝聚强烈意念，如此一来……”",
+        "desc": "本技能不会触发守备技能\n本技能无法因外部效果而重复使用\n[WhenUse]消耗[RitualSword]，使本技能伤害量+100%\n[WhenUse]消耗自身的所有[Repose]；每消耗1层[Repose]，使本技能基础威力+1（最多+13）\n[WhenUse]自身的[WitchFactor]层数每有10层，使本技能最终威力+1（最多+10）\n[WhenUse]自身失去（5+自身的[Wichization-NikaidouHiro]层数/5）点理智值（最多15点，不会使理智值低于-40点）\n[EndSkill]解除所有单位的[Wichization-NikaidouHiro]；此后自身无法再获得[Repose]\n[EndSkill]若自身理智值低于0点，则恢复至0点，并根据此前与0点相差的理智值额外恢复等量理智值",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]消耗所有单位的[WitchFactor]；每消耗10层，追加目标生命上限1%的固定伤害（最多50%；不同目标分别按自身生命上限计算）", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750131": {
+    "a": 0,
+    "id": "9750131",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "清除错误",
+        "desc": "[Wichization-NikaidouHiro]减算硬币技能、[CantIdentify]版本\n[CantIdentify]\n[WhenUse]目标的[Combustion]与[Laceration]强度之和每有6级，使本技能基础威力+1（最多+2）\n[WhenUse]自身的[WitchFactor]层数每有15层，使本技能最终威力+1（最多+5）\n[WhenUse]自身失去（5+自身的[Wichization-NikaidouHiro]层数/5）点理智值（最多7点）\n[WinDuel]对目标施加1层[Rebuttal]（自身所有基础攻击技能每回合最多1次）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2层[Laceration]\n[OnSucceedAttack]使自身获得1层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2级[Laceration]强度\n[OnSucceedAttack]使自身获得1层[WitchFactor]", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750132": {
+    "a": 0,
+    "id": "9750132",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "你错了，我不是邪恶",
+        "desc": "[Wichization-NikaidouHiro]减算硬币技能、[CantIdentify]版本\n[CantIdentify]\n[WhenUse]目标的[Combustion]与[Laceration]强度之和每有6级，使本技能基础威力+1（最多+3）\n[WhenUse]自身的[WitchFactor]层数每有15层，使本技能最终威力+1（最多+5）\n[WhenUse]自身失去（5+自身的[Wichization-NikaidouHiro]层数/5）点理智值（最多10点）\n[WinDuel]对目标施加1层[Rebuttal]（自身所有基础攻击技能每回合最多1次）；若目标带有[Rebuttal]，使本技能伤害量+（目标的[Rebuttal]层数×10）%（最多+30%）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2级[Laceration]强度\n[OnSucceedAttack]使自身获得1层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]施加2级[Laceration]强度\n[OnSucceedAttack]使自身获得1层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[OnSucceedAttack]若目标带有[Rebuttal]，则追加本硬币伤害量50%的傲慢伤害", "summary": ""}]}
+        ]
+      }
+    ]
+  },
+  "9750133": {
+    "a": 0,
+    "id": "9750133",
+    "levelList": [
+      {
+        "level": 1,
+        "name": "那就由我来杀死魔女",
+        "desc": "[Wichization-NikaidouHiro]减算硬币技能、[CantIdentify]版本\n[CantIdentify]\n[WhenUse]目标的[Combustion]与[Laceration]强度之和每有6级，使本技能基础威力+1（最多+4）\n[WhenUse]自身的[WitchFactor]层数每有10层，使本技能最终威力+1（最多+8）\n[WhenUse]自身失去（5+自身的[Wichization-NikaidouHiro]层数/5）点理智值（最多10点）\n[WhenUse]若目标带有[Rebuttal]，使本技能伤害量+（目标的[Rebuttal]层数×10）%（最多+50%）",
+        "rawDesc": "",
+        "abName": "",
+        "coinlist": [
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]施加2层[Laceration]\n[OnSucceedAttack]使自身获得2层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]施加2级[Laceration]强度\n[OnSucceedAttack]使自身获得2层[WitchFactor]", "summary": ""}]},
+          {"coindescs": [{"desc": "[SuperCoin]\n[OnSucceedAttack]触发目标1次[Laceration]，随后使其[Laceration]层数-1\n[OnSucceedAttack]使自身获得2层[WitchFactor]", "summary": ""}]}
+        ]
+      }
+    ]
+  }
+}

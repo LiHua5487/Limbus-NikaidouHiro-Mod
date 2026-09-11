@@ -1,0 +1,126 @@
+{
+  "list": [
+    {
+      "id": "WitchFactor",
+      "iconId": "WitchFactor",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 100,
+      "canBeDespelled": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "list": [
+        {
+          "ability": "AtkDamageMultiplierByStack",
+          "value": 0.005
+        }
+      ],
+      "categoryKeywordList": [],
+      "canBeDuplicated": false
+    },
+    {
+      "id": "Wichization-NikaidouHiro",
+      "iconId": "Wichization-NikaidouHiro",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "maxStack": 100,
+      "canBeDespelled": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "list": [
+        {
+          "ability": "CantRecoverMpOverValue",
+          "value": 0
+        },
+        {
+          "ability": "OverwriteAtkResistResultIfHigher",
+          "value": 0.5
+        }
+      ],
+      "categoryKeywordList": [],
+      "canBeDuplicated": false
+    },
+    {
+      "id": "Rebuttal",
+      "iconId": "Rebuttal",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Negative",
+      "maxStack": 5,
+      "canBeDespelled": true,
+      "list": [
+        {
+          "ability": "LoseStackOnRoundEnd",
+          "value": 1
+        }
+      ],
+      "categoryKeywordList": [],
+      "canBeDuplicated": false,
+      "destroyableOnRetreat": true,
+      "destroyableOnDie": true
+    },
+    {
+      "id": "Rewind",
+      "iconId": "Rewind",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 2,
+      "canBeDespelled": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "destroyableOnZero": true,
+      "list": [],
+      "categoryKeywordList": [],
+      "canBeDuplicated": false
+    },
+    {
+      "id": "RewindWitch",
+      "iconId": "RewindWitch",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 2,
+      "canBeDespelled": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "destroyableOnZero": true,
+      "list": [],
+      "categoryKeywordList": [],
+      "canBeDuplicated": false
+    },
+    {
+      "id": "RitualSword",
+      "iconId": "RitualSword",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 1,
+      "canBeDespelled": false,
+      "destroyableOnRetreat": false,
+      "list": [],
+      "categoryKeywordList": [],
+      "canBeDuplicated": false
+    },
+    {
+      "id": "Repose",
+      "iconId": "Repose",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Positive",
+      "maxStack": 13,
+      "canBeDespelled": false,
+      "destroyableOnRetreat": false,
+      "list": [],
+      "categoryKeywordList": [],
+      "canBeDuplicated": false
+    },
+    {
+      "id": "ReposeMark",
+      "iconId": "ReposeMark",
+      "buffClass": "NonvolatileBuff",
+      "buffType": "Neutral",
+      "maxStack": 50,
+      "canBeDespelled": false,
+      "destroyableOnRetreat": false,
+      "destroyableOnDie": false,
+      "list": [],
+      "categoryKeywordList": []
+    }
+  ]
+}
