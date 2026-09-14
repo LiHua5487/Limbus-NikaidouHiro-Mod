@@ -347,10 +347,10 @@ end
 -- 被动：大魔女的诅咒
 ------------------------------------------------------------------
 
--- 命中+3 / 击杀+10 魔女因子（OnSucceedAttack）
+-- 命中+3 / 击杀+5 魔女因子（OnSucceedAttack）
 function hiro_hit()
     if getunitstate(TARGET) == 0 then
-        gain_factor(10)
+        gain_factor(5)
     else
         gain_factor(3)
     end

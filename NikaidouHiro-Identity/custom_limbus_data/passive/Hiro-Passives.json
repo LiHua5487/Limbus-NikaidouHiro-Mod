@@ -24,7 +24,7 @@
       "id": 97501003,
       "attributeStockCondition": [],
       "requireIDList": [
-        "Modular/TIMING:EncounterStart/aggro(Self,900,next,0)",
+        "Modular/TIMING:EncounterStart/aggro(Self,10,next,0)",
         "Modular/TIMING:DuelClash/LUA:nikaidou_hiro/LUAMAIN:hiro_judge_clash",
         "Modular/TIMING:ChangeTakeDamage/LUA:nikaidou_hiro/LUAMAIN:hiro_judge_taken"
       ]

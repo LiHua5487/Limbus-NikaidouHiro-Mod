@@ -1,0 +1,81 @@
+{
+  "sounds": [
+    {
+      "name": "HiroPlayVoiceNormalS1",
+      "file": "SFX/Hiro/NormalS1.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceNormalS2",
+      "file": "SFX/Hiro/NormalS2.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceNormalS3",
+      "file": "SFX/Hiro/NormalS3.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceWitchS1",
+      "file": "SFX/Hiro/WitchS1.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceWitchS2",
+      "file": "SFX/Hiro/WitchS2.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceWitchS3",
+      "file": "SFX/Hiro/WitchS3.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceDeliverance",
+      "file": "SFX/Hiro/Deliverance.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceReposeRitual",
+      "file": "SFX/Hiro/ReposeRitual.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceFirstWitch",
+      "file": "SFX/Hiro/FirstWitch.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceStagger",
+      "file": "SFX/Hiro/Stagger.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    },
+    {
+      "name": "HiroPlayVoiceDeath",
+      "file": "SFX/Hiro/Death.wav",
+      "stream": false,
+      "volume": 1.0,
+      "soundType": "Voice"
+    }
+  ]
+}
