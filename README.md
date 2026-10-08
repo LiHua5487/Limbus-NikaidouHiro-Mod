@@ -4,7 +4,7 @@
 
 ## 安装
 
-1. 从本仓库的 [Releases](https://github.com/LiHua5487/Limbus-NikaidouHiro-Mod/releases) 下载 ZIP
+1. 从本仓库的 [Releases](https://github.com/LiHua5487/Limbus-NikaidouHiro-Mod/releases) 下载人格mod与魔裁人格共用的前置mod `WitchIslandShared` 并解压
 2. 将其中的 `NikaidouHiro-Identity` 文件夹放到 `./LetheLauncher-Distribution-7/BepInEx/plugins/Lethe/mods`
 3. 将其中的 `NikaidouHiro.dll` 放到 `./LetheLauncher-Distribution-7/BepInEx/plugins/`
 
